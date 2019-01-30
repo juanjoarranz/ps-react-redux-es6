@@ -10,7 +10,7 @@
             "name": "Start",
             "runtimeExecutable": "npm",
             "runtimeArgs": [
-                "run-script",
+               
                 "start"
             ],
             "cwd": "${workspaceFolder}"
