@@ -4,6 +4,7 @@
   "description": "Starter kit for React and Redux Pluralsight course by Cory House",
   "scripts": {
     "lint": "node_modules/.bin/esw webpack.config.* src tools",
+    "lint:watch": "npm run lint -- --watch",
     "prestart": "babel-node tools/startMessage.js",
     "start": "babel-node tools/srcServer.js"
   },
