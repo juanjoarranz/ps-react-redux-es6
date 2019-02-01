@@ -7,6 +7,6 @@ import './styles/styles.css'; //Webpack can import CSS files too!
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 render(
-<Router history={browserHistory} routes={routes} />,
-  document.getElementById('app')
+  <Router history={browserHistory} routes={routes} />,
+  document.getElementById( 'app' )
 );

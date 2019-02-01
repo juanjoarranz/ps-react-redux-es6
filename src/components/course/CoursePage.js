@@ -9,20 +9,20 @@ class CoursesPage extends React.Component {
     };
 
     this.onTitleChange = this.onTitleChange.bind( this );
-    this.onClickSave   = this.onClickSave.bind( this );
+    this.onClickSave = this.onClickSave.bind( this );
   }
 
-  onTitleChange ( event ) {
+  onTitleChange( event ) {
     const course = this.state.course;
     course.title = event.target.value;
     this.setState( { course: course } );
   }
 
-  onClickSave () {
+  onClickSave() {
     alert( `Saving ${ this.state.course.title }` );
   }
 
-  render () {
+  render() {
     return (
       <div>
         <h1>Courses</h1>
