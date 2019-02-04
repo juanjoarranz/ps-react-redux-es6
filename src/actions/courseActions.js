@@ -23,11 +23,11 @@ export function loadCourses() {
     }
 }
 
-export function saveCourse() {
+export function saveCourse( course ) {
     return function ( dispatch, getState ) {
-        return courseApi.saveCourse(course)
+        return courseApi.saveCourse( course )
             .then( savedCourse => {
-                course.id ?
+                savedCourse.id ?
                     dispatch( updateCourseSuccess( savedCourse ) ) :
                     dispatch( createCourseSuccess( savedCourse ) );
             } )
